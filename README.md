@@ -8,7 +8,7 @@ This is a tiny, getting started environment
 ### Usage:
 In the folder install the package to pip to be used in a python script
 ```
-pip install -e .```
+pip install -e .
 ```
 
 
