@@ -1,1 +1,1 @@
-from bandits.envs.grid_world import TwoArmedBanditEnv
+from bandits.envs.TwoArmedBanditEnv import TwoArmedBanditEnv
