@@ -1,12 +1,18 @@
 import gymnasium as gym
 from gymnasium import spaces
-
+import random
 
 class TwoArmedBanditEnv(gym.Env):
 
-    def __init__(self, fixed_var=3, fixed_var_2=7, runs=100):
-        self.fixed_var = fixed_var
-        self.fixed_var_2 = fixed_var_2
+    def __init__(self, fixed_var=3, fixed_var_2=7, runs=100, use_fixed_values=True):
+
+        if use_fixed_values:
+            self.fixed_var = fixed_var
+            self.fixed_var_2 = fixed_var_2
+        else:
+            self.fixed_var = random.randint(1, 10)
+            self.fixed_var_2 = random.randint(1, 10)
+
         self.max_runs = runs
 
         # easy tracking
