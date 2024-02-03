@@ -1,2 +1,4 @@
 
 bandits.egg-info/
+
+*.pyc
